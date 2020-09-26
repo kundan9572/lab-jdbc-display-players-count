@@ -1,14 +1,18 @@
 package model;
-
-public class Skill{
+public class Skill {
+	private Long skillId;
+	private String skillName;
 	
-	long skillId;
-	String skillName;
-	public long getSkillId() {
+	public Skill(Long skillId,String skillName) {
+		super();
+		this.skillId = skillId;
+		this.skillName = skillName;
+	}
+	public Long getSkillld() {
 		return skillId;
 	}
-	public void setSkillId(long skillId) {
-		this.skillId = skillId;
+	public void setSkillld(Long skillld) {
+		this.skillId = skillld;
 	}
 	public String getSkillName() {
 		return skillName;
@@ -16,10 +20,4 @@ public class Skill{
 	public void setSkillName(String skillName) {
 		this.skillName = skillName;
 	}
-	public Skill(long skillId, String skillName) {
-		this.skillId = skillId;
-		this.skillName = skillName;
-	}
-	
-	
 }
